@@ -65,19 +65,33 @@
 ## 📁 项目结构
 .
 ├── main.py # 程序入口
+
 ├── folder_video_manager.py # 主窗口和核心逻辑
+
 ├── video_player.py # 视频播放器组件
+
 ├── data_manager.py # 数据读写管理 (JSON)
+
 ├── ui_components.py # 自定义 UI 控件
+
 ├── requirements.txt # Python 依赖列表
+
 ├── README.md # 本说明文件
+
 ├── Image/ # 本说明文件附带图片 (如果有的话)
+
 ├── LICENSE # 开源许可证
+
 └── Save/ # 数据存储目录 (运行后自动生成)
+
 ├── FolderPath.json
+
 ├── AllMoviesLabel.json
+
 ├── AllKnownTags.json
+
 └── video_playback_state.json
+
 text
 
 编辑
