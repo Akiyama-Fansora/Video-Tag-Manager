@@ -1,4 +1,4 @@
-# video_player.py - 统一快捷键下降沿处理（所有快捷键仅响应首次按下）
+# video_player.py 
 import sys
 import os
 from PyQt5.QtWidgets import QWidget, QVBoxLayout, QHBoxLayout, QLabel, QPushButton, QMenu
@@ -535,7 +535,7 @@ class VideoPlayer(QWidget):
         self.current_speed = speed
         self.speed_label.setText(f"{speed:.1f}x")
 
-    # === 新增：统一快捷键入口（仅响应下降沿）===
+    # === 统一快捷键入口（仅响应下降沿）===
     def keyPressEvent(self, event: QKeyEvent):
         # 所有快捷键只响应首次按下（下降沿），忽略自动重复
         if event.isAutoRepeat():

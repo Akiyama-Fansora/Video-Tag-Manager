@@ -1,5 +1,4 @@
-# folder_video_manager.py - Final V22: 修复精准视频切换 + 新增右键删除标签功能（完整版）
-import sys
+# folder_video_manager.py
 import os
 import json
 from pathlib import Path
@@ -424,7 +423,7 @@ class FolderVideoManager(QMainWindow):
         if os.path.isfile(path):
             self.open_video(path)
 
-    # === 【核心修复】精准查找相邻视频 ===
+    # === 精准查找相邻视频 ===
     def _find_adjacent_video(self, direction):
         if self.current_folder is None or not self.video_player or not self.video_player.video_path:
             return None
@@ -548,7 +547,7 @@ class FolderVideoManager(QMainWindow):
             if self.video_player:
                 self.video_player.setFocus()
 
-    # === 【新增】右键菜单：添加/删除标签 ===
+    # === 右键菜单：添加/删除标签 ===
     def on_right_click(self, position):
         if self.current_folder is None:
             return
